@@ -69,6 +69,8 @@ function recoverOrphanedFiles() {
             log('ERROR', `Failed to recover orphaned file ${f}: ${(error as Error).message}`);
         }
     }
+}
+
 const HEARTBEAT_ERROR_DEDUPE_MS = 60_000;
 const heartbeatErrorCache = new Map<string, number>();
 
